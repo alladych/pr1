@@ -1,0 +1,114 @@
+body {
+  background-color: #d4fcd5; /* цвет фона */
+}
+.card {
+  background-color: #aff9c1; /* цвет карточки */
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.center-image {
+  margin: 0; /* Убираем все отступы */
+  padding: 0; /* Убираем все внутренние отступы */
+  max-width: 100%; /* Ограничиваем ширину изображения */
+  height: auto; /* Сохраняем пропорции изображения */
+  margin-right: 50px;
+}
+/* Медиа-запрос для адаптации на мобильных устройствах */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Изменяем направление на вертикальное */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+  .center-image {
+    margin-bottom: 20px; /* Добавляем отступ снизу для изображения */
+    max-width: 100%; /* Изображение занимает всю ширину контейнера */
+  }
+}
+section {
+  margin: 50px 0;
+}
+.review {
+  background: #e5f6b5;
+  background-image: url("../img/review_background.png");
+  background-size: cover;
+  border: 1px solid #a46534;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 10px;
+}
+.review .review-head {
+  display: inline-flex;
+}
+.review .review-head .reviewer-name p {
+  font-size: 18px;
+  margin-left: 18px;
+  font-weight: 500;
+}
+.review .review-head .reviewer-avatar img {
+  width: 45px;
+  height: 45px;
+}
+.review .review-body img {
+  width: 100px;
+  height: auto;
+}
+.review .review-body p {
+  font-size: 15px;
+}
+#review-buttons {
+  margin-top: 50px;
+  text-align: center;
+}
+#review-buttons a:hover > .review-button {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.review-button {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  padding: 10px;
+}
+.review:hover {
+  background-color: rgba(47, 47, 47, 0.1);
+}
+.submit-button {
+  background-color: #4caf50; /* Зеленый цвет */
+  color: white; /* Цвет текста */
+  padding: 15px 32px; /* Отступы */
+  text-align: center; /* Выравнивание текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  display: inline-block; /* Отображение в строке */
+  font-size: 16px; /* Размер шрифта */
+  margin: 4px 2px; /* Отступы */
+  cursor: pointer; /* Курсор при наведении */
+  border: none; /* Убираем границу */
+  border-radius: 4px; /* Скругление углов */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+.submit-button:hover {
+  background-color: #45a049; /* Цвет фона при наведении */
+}
